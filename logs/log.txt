@@ -1,0 +1,11 @@
+
+2016-04-14 13:32:35 | Login: apple has logged in.
+2016-04-14 13:32:42 | Logout: apple has logged out.
+2016-04-14 18:42:31 | Login: apple has logged in.
+2016-04-14 18:42:35 | Logout: apple has logged out.
+2016-04-14 18:43:02 | Login: banana has logged in.
+2016-04-14 18:43:06 | Logout: banana has logged out.
+2016-04-15 12:06:38 | Login: apple has logged in.
+2016-04-15 12:06:48 | Logout: apple has logged out.
+2016-04-15 16:42:18 | Login: banana has logged in.
+2016-04-15 16:42:26 | Logout: banana has logged out.

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/password.js"></script>
+    <meta charset="utf-8">
+    <link href="css/main.css" media="all" rel="stylesheet" type="text/css" />
+    <title>Online Toy Store: Admin</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Online Toy Store: Admin</h1>
+    </div>
+    <div id="main">
+        <h1>Form Validation</h1>
+        <form id="my_form" class="signup" action="login.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" id="password"></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><label><input type="checkbox" onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'">Show password</label></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+            </table>
+            <input type="submit" name="submit" value="login" id="login" disabled="disabled">
+            
+        </form>
+    </div>
+    <div id="footer">Copyright 2016 Online Toy Store</div>
+</body>
+
+</html>

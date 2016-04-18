@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Man-Lin Ku-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slide.js"></script>
+   
+    <script src="js/validator.js"></script>
+    <script src="js/menu.js"></script>
+
+    <script src="js/register.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/password_register.js"></script>
+   
+
+    <link href="css/main.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/signin.css" >
+    <link rel="stylesheet" href="css/bootstrap.css">
+   
+
+    <title>Online Toy Store</title>
+</head>
+
+<body>
+  <nav>
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" id="home_menu">Online Toy Store</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" >
+      <ul class="nav navbar-nav">
+        <li class="active" id="signin_menu" style="display:true;">
+          <a href="#">Sign In </a>
+        </li>
+        <li class="active" id="signout_menu" style="display:none;">
+          <a href="#">Log Out </a>
+        </li>
+
+         <li class="active" id="cart_menu" >
+          <a href="#">Cart</a>
+         </li>
+
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account<div class="caret"></div></a>
+          <ul class="dropdown-menu" role="menu">
+            <li id="wish"><a href="#">Wish List</a></li>
+            <li id="history"><a href="#">Order History</a></li>
+            <li id="saveitem"><a href="#">Saved Items</a></li>
+            <li role="separator" class="divider"></li>
+            <li id="accountinfo"><a href="#">Account Info</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div class="container">
+   <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/slide/slide1.png"   alt="slide">
+            <div class="carousel-caption"> Get your toy today! </div>
+          </div>
+
+          <div class="item">
+            <img src="img/slide/slide2.png" alt="slide">
+             <div class="carousel-caption"> Great toys are waiting for you!</div>
+          </div>
+
+          <div class="item">
+            <img src="img/slide/slide3.png"  alt="slide">
+             <div class="carousel-caption"> Play with me! </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <div class="icon-prev"></div>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <dic class="icon-next"></dic>
+        </a>
+      </div>
+
+
+     </div>
+   </div>
+
+</div>
+
+<div class="container">
+<div id="loginclick" hidden="" >
+   <div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <h2>Log In</h2>
+        <form id="my_form" class="signup" action="login.php" method="POST">
+            <table>
+                 <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" name="username" id="username"><br/></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" id="password"></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><label><input type="checkbox" onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'">Show password</label></td>  
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+            </table>
+            <input type="submit" name="submit" value="Login" id="login" disabled="disabled">      
+            <br/><a id="registernew">Don't have account? Register Now!</a>      
+        </form>
+
+ </div>
+ </div>
+ </div>
+</div>
+
+
+
+ <div class="container">
+     <div id="registerclick" hidden="" >
+         <div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <h2>Register</h2>
+        <div id="registerErr"></div>
+        <form id="register_form" class="registerform" >
+            <table>
+               <tr>
+                    <td><label for="emailr">Email:</label></td>
+                    <td><input type="text" name="emailr" id="emailr"></td>
+                </tr>
+                 <tr>
+                    <td><label for="usernamer">Username:</label></td>
+                    <td><input type="text" name="usernamer" id="usernamer"></td>
+                </tr>
+                <tr>
+                    <td><label for="passwordr">Password:</label></td>
+                    <td><input type="password" name="passwordr" id="passwordr"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><label><input type="checkbox" onchange="document.getElementById('passwordr').type = this.checked ? 'text' : 'password'">Show password</label></td>  
+                </tr>
+                <tr>
+                    <td><label for="confirm">Confirm:</label></td>
+                    <td><input type="password" name="confirm" id="confirm"></td>
+                </tr>               
+            </table>
+            <input type="submit" name="register" value="Register" id="register" disabled="disabled">        
+        </form>
+
+ </div>
+ </div>
+ </div>
+</div><!-- /container -->
+
+
+
+
+</body>
+</html>
